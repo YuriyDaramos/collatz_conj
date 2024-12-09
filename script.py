@@ -70,7 +70,7 @@ def worker(start, step, end):
     collatz_test(start, end, step)
 
 
-def collatz_test(start, end, search_step, track_max_step=False, show_calc=True, show_progress=False):
+def collatz_test(start, end, search_step, track_max_step=False, show_calc=False, show_progress=False):
     max_steps = [(1, 0)]
     multi_set = [{"last_cut": 0, "max_set_size": 5_000_000}, set()]
     confirmed_set = set()
